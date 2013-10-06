@@ -57,8 +57,8 @@ set hlsearch "Highlight all matches to search
 " whitespace
 set list " Indicate whitespace as follows:
 set listchars=tab:\ \ 
-set listchars+=trail:Â·
-set listchars+=trail:Â·
+set listchars+=trail:·
+set listchars+=trail:·
 set listchars+=extends:>
 set listchars+=precedes:<
 set nowrap " Don't wrap lines.
