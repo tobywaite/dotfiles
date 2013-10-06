@@ -25,15 +25,60 @@ alias gs='git status'
 alias gd='git diff'
 alias gc='git commit -a'
 
-# setup virtualenv wrapper
+# setup virtualenv
+export PATH=$HOME/.local/bin:$PATH
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+virtualenv_loc=/usr/local/bin/virtualenvwrapper.sh
+local_virtualenv_loc=$HOME/.local/bin/virtualenvwrapper.sh
+if [ -f $local_virtualenv_loc]; then
+  virtualenv_loc=local_virtualenv_loc
+fi
+if [ -f $virtualenv_loc]; then
+  source $virtualenv_loc;
+fi
+
 # alias mkvirtualenv so the prompt shows up colorized
 VIRTUAL_ENV_NAME='`basename $VIRTUAL_ENV`'
 alias mkvirtualenv="mkvirtualenv --prompt='\e[36;40m(\"$VIRTUAL_ENV_NAME\") ' --no-site-packages"
 
-# echonest API key
-export ECHO_NEST_API_KEY="TH6VY4CKLAINW8KCO"
+# testify tab completion
+testify_tab_file=$HOME/bin/testify_tab_completion.sh
+if [ -f $testify_tab_file ];
+then
+    source $testify_tab_file ;
+fi
 
-# android dev tools
-export PATH=${PATH}:/Users/toby/code/android/adt-bundle-mac-x86_64/sdk/tools:/Users/toby/code/android/adt-bundle-mac-x86_64/sdk/platform-tools
+# Fix it when my ssh agent gets confused in tmux
+ssh-reagent () {
+    for agent in /tmp/ssh-*/agent.*; do
+         export SSH_AUTH_SOCK=$agent
+         if ssh-add -l 2>&1 > /dev/null; then
+             echo Found working SSH Agent:
+             ssh-add -l
+             return
+         fi
+     done
+     echo Cannot find ssh agent - maybe you should reconnect and forward it?
+}
+
+# yelp specific config
+if [ "$YELP_MAIN" ]; then
+  # Move to the actual working directory I want to be in...
+  cd ~/pg/yelp-main
+fi
+
+pg_environ=~/.pgconf-toby/environ.sh
+if [ -f $pg_environ ]; then
+  source $pg_environ;
+fi
+
+if [ "$YELP_IN_SANDBOX" ]; then
+  export PS1="$PS1(sandbox)\$ "
+fi
+
+# Yelp Aliases
+yelp_aliases=/nail/scripts/aliases.sh
+if [ -f $yelp_aliases ];
+then
+    source $yelp_aliases;
+fi
