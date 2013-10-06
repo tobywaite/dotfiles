@@ -1,0 +1,15 @@
+drop_filter = useless_items
+hp_warning = 35
+mp_warning = 0
+hp_colour = 75:yellow, 50:red
+mp_colour = 70:yellow, 35:red
+
+force_more_message = You are starting to lose your buoyancy
+force_more_message = You hear a distant snort
+force_more_message = You hear coins being counted
+force_more_message = You enter a teleport trap
+force_more_message = You fall through a shaft
+force_more_message = Your hearing returns.
+force_more_message = Sigmund comes into view.
+force_more_message = You flicker for a moment.
+force_more_message = You flicker back into view.
