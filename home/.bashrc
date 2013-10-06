@@ -30,10 +30,10 @@ export PATH=$HOME/.local/bin:$PATH
 export WORKON_HOME=$HOME/.virtualenvs
 virtualenv_loc=/usr/local/bin/virtualenvwrapper.sh
 local_virtualenv_loc=$HOME/.local/bin/virtualenvwrapper.sh
-if [ -f $local_virtualenv_loc]; then
+if [ -f $local_virtualenv_loc ]; then
   virtualenv_loc=local_virtualenv_loc
 fi
-if [ -f $virtualenv_loc]; then
+if [ -f $virtualenv_loc ]; then
   source $virtualenv_loc;
 fi
 
