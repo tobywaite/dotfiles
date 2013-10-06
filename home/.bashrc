@@ -20,7 +20,7 @@ export PS1="\[\e[37;40m\]\u@\h \[\e[32;40m\]\w\[\e[34;40m\]> \[\e[0m\]"
 ###################################
 
 # Git aliases
-alias git='hub'
+alias git='hub' # github integration. This will fail gracefully (by not aliasing anything) if hub isn't installed
 alias gs='git status'
 alias gd='git diff'
 alias gc='git commit -a'
