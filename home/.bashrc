@@ -3,6 +3,12 @@
 ########################
 
 # general bash aliases
+LS_OPTS='-ah'
+if [ $(uname) == "Linux" ]; then
+  LS_OPTS="$LS_OTPS --color=always"
+fi
+alias ls="ls $LS_OPTS"
+
 alias grep='grep --color' #colorize
 alias v='vim' # shortcut
 alias ls='ls -GF' # Colorize and mark filetypes
