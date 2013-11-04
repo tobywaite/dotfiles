@@ -14,6 +14,8 @@ alias v='vim' # shortcut
 alias ls='ls -GF' # Colorize and mark filetypes
 alias ll='ls -alGF'
 
+alias webserver='python -m SimpleHTTPServer'
+
 # set bash to vim mode
 set -o vi
 

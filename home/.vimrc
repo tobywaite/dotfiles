@@ -18,6 +18,8 @@ let g:solarized_contrast = "high"
 
 " Syntastic
 let g:syntastic_auto_loc_list=1
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"] "ignore angular directives
+
 
 " CtrlP
 set wildignore+=*.pyc,*templates/*.py* "ignore compiled python & templets
@@ -44,7 +46,8 @@ set textwidth=0 "Shut off max textwidth
 
 " Tabs
 set autoindent "Indent the next line automatically
-set noexpandtab "Don't replace tabs with spaces
+"set noexpandtab "Don't replace tabs with spaces
+set expandtab
 set shiftwidth=4
 set tabstop=4
 filetype indent on
