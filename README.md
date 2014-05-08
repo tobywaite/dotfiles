@@ -1,4 +1,5 @@
 To Install homesick:
+https://github.com/technicalpickles/homesick
 
 gem install homesick
 homesick clone tobywaite/dotfiles
