@@ -1,5 +1,9 @@
 # How to set up my env #
 
+### Install devtools ###
+
+    xcode-select --install
+
 ### Install homesick: ###
 https://github.com/technicalpickles/homesick
 
