@@ -20,7 +20,7 @@ alias webserver='python -m SimpleHTTPServer'
 set -o vi
 
 # set prompt to look like: "user@host ~/path>" but with colors.
-export PS1="\[\e[37;40m\]\u@\h \[\e[32;40m\]\w\[\e[34;40m\]> \[\e[0m\]"
+export PS1="\[\e[37;20m\]\u@\h \[\e[32;20m\]\w\[\e[34;20m\] > \[\e[0m\]"
 
 
 ###################################
