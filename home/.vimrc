@@ -39,7 +39,6 @@ let g:Powerline_colorscheme='solarized256'
 map <leader>gb :Gblame<CR>
 
 " Sane defaults
-
 set backspace=indent,eol,start
 set number "Show line numbers
 set textwidth=0 "Shut off max textwidth
@@ -66,6 +65,11 @@ set listchars+=extends:>
 set listchars+=precedes:<
 set nowrap " Don't wrap lines.
 
+" Code folding
+set foldmethod=indent
+set foldlevel=99
+
+
 " Underline the CursorLine
 set cursorline
 highlight CursorLine term=underline cterm=underline ctermbg=none
@@ -75,7 +79,7 @@ silent !mkdir ~/.vim/backups > /dev/null 2>&1
 set undodir=~/.vim/backups
 set undofile
 
-" Jedi Config (python stuff) https://github.com/davidhalter/jedi-vim
+" Jedi Config (python tab_completion) https://github.com/davidhalter/jedi-vim
 let g:jedi#use_tabs_not_buffers = 0
 
 " let g:jedi#goto_assignments_command = "<leader>g"
