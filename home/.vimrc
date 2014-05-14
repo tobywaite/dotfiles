@@ -36,7 +36,7 @@ let g:Powerline_theme='short'
 let g:Powerline_colorscheme='solarized256'
 
 " Fugitive
-map <leader>gb :Gblame<CR>
+map <leader>gb :Gblame -w<CR>
 
 " Sane defaults
 set backspace=indent,eol,start
@@ -45,10 +45,10 @@ set textwidth=0 "Shut off max textwidth
 
 " Tabs
 set autoindent "Indent the next line automatically
-"set noexpandtab "Don't replace tabs with spaces
-set expandtab
+set expandtab "Don't replace tabs with spaces
 set shiftwidth=4
 set tabstop=4
+set softtabstop=1
 filetype indent on
 
 " Search
