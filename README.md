@@ -22,7 +22,9 @@
     - Install Powerline Fonts:
         - https://github.com/powerline/fonts
     - Set up iTerm configuration:
-        - iTerm Preferences -> General -> "Load preferences from a custom folder or URL" -> "/Users/toby/.config/iterm" 
+        - iTerm Preferences -> General -> "Load preferences from a custom folder or URL" -> "/Users/toby/.config/iterm"
+6. Set up python.
+    - pip install -r ~/.config/python/requirements.txt
 
 ## To Do: ##
 - Maybe automate some of the above using .homesickrc (see homesick README) or make?

@@ -1,0 +1,11 @@
+Storing global python packages
+
+Install with:
+
+pip install -r ~/.config/python/requirements.txt
+pip3 install -r ~/.config/python/requirements3.txt
+
+Save current requirements with:
+
+pip freeze ~/.config/python/requirements.txt
+pip3 freeze ~/.config/python/requirements3.txt
