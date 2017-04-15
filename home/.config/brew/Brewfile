@@ -23,6 +23,7 @@ brew 'gnupg'
 brew 'hub'
 brew 'openssl'
 brew 'libevent'
+brew 'mas'
 brew 'mtr'
 brew 'readline'
 brew 'sqlite'
@@ -31,4 +32,20 @@ brew 'xz'
 brew 'python3'
 brew 'tmux'
 brew 'neovim/neovim/neovim'
+cask '1password'
+cask 'alfred'
+cask 'bartender'
+cask 'dropbox'
+cask 'google-chrome'
+cask 'iterm2'
 cask 'keybase'
+cask 'slack'
+cask 'steam'
+cask 'textual'
+mas 'GarageBand', id: 682658836
+mas 'iMovie', id: 408981434
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Todoist', id: 585829637
+mas 'Xcode', id: 497799835
