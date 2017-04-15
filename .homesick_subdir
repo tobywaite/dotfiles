@@ -1,4 +1,11 @@
+.config/brew
+
 .oh-my-zsh/custom
 .oh-my-zsh/custom/themes
 .oh-my-zsh/custom/plugins
+
+.config/
 .config/brew
+.config/nvim
+.config/nvim/bundles
+.config/nvim/syntax
