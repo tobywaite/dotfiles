@@ -1,18 +1,28 @@
 # How to set up my env #
 
-### Install homesick: ###
-https://github.com/technicalpickles/homesick
+1. Install Homebrew:
+    - https://brew.sh/
+    - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. Install OhMyZsh:
+    - https://ohmyz.sh/
+    - $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+3. Set up SSH Keys & Github
+    - https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+4. Install Dotfiles
+    - https://github.com/technicalpickles/homesick
+    - https://github.com/tobywaite/dotfiles
+        - sudo gem install homesick
+        - homesick clone tobywaite/dotfiles
+        - homesick link dotfiles
+5. Configure iTerm
+    - Download & Install Solarized: 
+        - http://ethanschoonover.com/solarized
+        - http://ethanschoonover.com/solarized/files/solarized.zip
+        - https://github.com/altercation/ethanschoonover.com/tree/master/projects/solarized/iterm2-colors-solarized
+    - Install Powerline Fonts:
+        - https://github.com/powerline/fonts
+    - Set up iTerm configuration:
+        - iTerm Preferences -> General -> "Load preferences from a custom folder or URL" -> "/Users/toby/.config/iterm" 
 
-    sudo gem install homesick
-    homesick clone tobywaite/dotfiles
-    homesick link dotfiles
-
-### Other env setup on OS X: ###
-- Install homebrew: http://brew.sh/
-- Install hub (github wrapper): brew install hub
-- Solarized for iTerm2: https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
-- Powerline fonts (Inconsolata 15pt is nice): https://github.com/powerline/fonts
-- Disable iTerm2 -> Preferences -> Profiles -> Text -> "Draw bold text in bright colors"
-
-### To Do: ###
-- Maybe automate some of the above using .homesickrc (see homesick README).
+## To Do: ##
+- Maybe automate some of the above using .homesickrc (see homesick README) or make?
