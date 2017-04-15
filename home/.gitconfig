@@ -1,5 +1,5 @@
 [user]
 	email = toby.waite@gmail.com
-    name = Toby Waite
+	name = Toby Waite
 [url "ssh://git@github.com/"]
-    insteadOf = https://github.com/
+	insteadOf = https://github.com/
