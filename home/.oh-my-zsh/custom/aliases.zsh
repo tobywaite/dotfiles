@@ -5,3 +5,5 @@ alias dotfiles="homesick open"
 
 alias gs="git status"
 alias gd="git diff"
+
+alias -s py="python3"
