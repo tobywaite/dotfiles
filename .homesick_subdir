@@ -9,3 +9,4 @@
 .config/nvim
 .config/nvim/bundles
 .config/nvim/syntax
+.config

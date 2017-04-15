@@ -17,13 +17,15 @@ colorscheme solarized
 let g:syntastic_auto_loc_list=1
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"] "ignore angular directives
 
-
 " CtrlP
 set wildignore+=*.pyc,*templates/*.py* "ignore compiled python & templets
 set wildignore+=.*,*.log,*.swp "ignore logs and system files
 set wildignore+=*.jpg,*.png,*.xpm,*.gif "ignore images
 
 let g:ctrlp_map='<C-t>'
+
+" Nerdtree
+let NERDTreeShowHidden=1
 
 " Powerline
 set runtimepath+=/nail/home/toby/.local/lib/python2.6/site-packages/powerline/bindings/vim
