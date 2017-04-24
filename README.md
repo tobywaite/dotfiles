@@ -29,3 +29,4 @@
 
 ## To Do: ##
 - Maybe automate some of the above using .homesickrc (see homesick README) or make?
+- iTerm config isn't tracked. Fix it!
