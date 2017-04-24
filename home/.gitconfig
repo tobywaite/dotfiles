@@ -4,3 +4,5 @@
 	signingkey = 22C525F964E6C554
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
